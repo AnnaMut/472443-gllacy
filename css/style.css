@@ -5,8 +5,8 @@ body  {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  color:#fff;
   min-width: 1200px;
+  color: #fff;
   background-color: #849d8f;
   background-position: center top;
   background-repeat: no-repeat;
@@ -16,17 +16,17 @@ body  {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
@@ -146,8 +146,7 @@ img {
 
 
 .submenu li:first-of-type {
-  border-bottom: 1px solid;
-  border-bottom-color: #d1d0ce;
+  border-bottom: 1px solid #d1d0ce; /* что это */
 }
 
 
@@ -396,10 +395,11 @@ a.entrance {
 
 
 .login:hover .entrance,
-.entrance:focus .login { /*НИКАК НЕ МОГУ ОКРАСИТЬ В БЕЛЫЙ ВХОД ПРИ ФОКУСЕ*/
+.entrance:focus {
   background-color: #f8f7f4;
   color: #323232;
   border-radius: 16px;
+  outline: none;
 }
 
 
@@ -722,26 +722,25 @@ a.entrance .icon {
 
 
 .basket .bg-icon-basket-red {
-  fill:transparent;
+  fill: transparent;
 }
 
 
 .basket .icon-basket-red {
-  fill:#fff;
+  fill: #fff;
 }
 
 
 .basket.active .bg-icon-basket-red,
-.basket:hover .bg-icon-basket-red,
-.basket:focus .bg-icon-basket-red {
-  fill:#e84d37;
+.basket:hover .bg-icon-basket-red {
+  fill: #e84d37;
 }
 
 
 .basket.active .icon-basket-red,
 .basket:hover .icon-basket-red,
-.basket:focus .icon-basket-red {
-  fill:#343434;
+.basket a:focus .icon-basket-red {
+  fill: #343434;
 }
 
 
@@ -754,6 +753,7 @@ a.entrance .icon {
 .basket a:focus {
   background-color: #f8f7f4;
   color: #323232;
+  /*outline: none; не убирраю аутлайн потому что тогда не видно таба в каталоге*/
 }
 
 
@@ -1445,7 +1445,7 @@ h1 {
 }
 
 
-.subscribe-gllacy input[type="email"]  {
+.subscribe-gllacy input[type="email"] {
   font: inherit;
   font-size: 16px;
   line-height: 24px;
@@ -1454,10 +1454,7 @@ h1 {
   width: 368px;
   padding: 11px 10px 12px 13px;
   border-radius: 5px;
-  border: none;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #d3d3d2;
+  border: 2px solid #d3d3d2;
   height: 44px;
   margin-right: 7px;
 }
@@ -1760,33 +1757,36 @@ margin:  0 13px 0 0;
   width: 24px;
   height: 22px;
   background-image: url(../img/radio-off.svg);
+  background-position: center center;
   background-size: 22px 22px;
   background-repeat: no-repeat;
   opacity: 0.8;
-   cursor: pointer;
+  cursor: pointer;
 }
 
 
 input[type="radio"]:checked+.radio-mark{
   background-image: url(../img/radio-on.svg);
   background-position: center center;
+  background-size: 22px 22px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 
-input[type="radio"]:hover+.radio-mark{
+input[type="radio"]:hover+.radio-mark,
+input[type="radio"]:focus+.radio-mark {
   opacity: 1;
 }
 
 
-input[type="radio"]:disable+.radio-mark{
+input[type="radio"]:disable+.radio-mark {
   opacity: 0.4;
 }
 
 
 .fatness:hover+.radio-mark,
-.fatness-type label:focus .radio-mark  {
+.fatness-type label:focus .radio-mark {
   opacity: 1;
 }
 
@@ -1853,27 +1853,32 @@ input[type="radio"]:disable+.radio-mark{
 }
 
 
-input[type="checkbox"]:checked+.checkbox-mark{
+input[type="checkbox"]:checked+.checkbox-mark {
   background-image: url(../img/checkbox-on.svg);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-input[type="checkbox"]:hover+.checkbox-mark{
+
+input[type="checkbox"]:hover+.checkbox-mark,
+input[type="checkbox"]:focus+.checkbox-mark {
   opacity: 1;
 }
+
 
 input[type="checkbox"]:disable+.checkbox-mark{
   opacity: 0.4;
 }
+
 
 .filler:hover+.checkbox-mark,
 .filler-type label:focus .checkbox-mark  {
   opacity: 1;
 }
 
-filler:hover+.checkbox-mark {
+
+.filler:hover+.checkbox-mark {
   opacity: 0.5;
 }
 
