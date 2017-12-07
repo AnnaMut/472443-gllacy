@@ -241,7 +241,7 @@
          <div class="head-office">
            <p>Адрес главного офиса<br>и офлайн-магазина:<br><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
            <p class="head-office-box">Для заказов по телефону:<br><b>8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>
-           <a class="button-fbform" href="#">Форма обратной связи</a>
+           <a class="button-fbform" href="writeus.html">Форма обратной связи</a>
           </div>
           </section>
       <div class="container">
@@ -280,7 +280,7 @@
                <label class="visually-hidden" for="feedbackform-name">Пожалуйста, укажите как Вас зовут</label>
                <input type="text" name="name" id="feedbackform-name" placeholder="Как вас зовут?"><br>
                <label class="visually-hidden" for="feedbackform-email">Электронная почта для получения ответа:</label>
-               <input type="email" name="email" value="" id="feedbackform-email" placeholder="Ваша почта для ответа?"><br>
+               <input type="email" name="email" id="feedbackform-email" placeholder="Ваша почта для ответа?"><br>
 
              <p class="visually-hidden">Введите ваше сообщение</p>
              <textarea placeholder="Напишите что-нибудь..."></textarea><br>
@@ -290,5 +290,53 @@
               <span class="visually-hidden">Закрыть</span>
               </button>
              </section>
+    <script>
+      var link = document.querySelector(".button-fbform");
+      var popup = document.querySelector(".feedbackform");
+      var close = popup.querySelector(".feedbackform-close");
+      var form = popup.querySelector("form");
+      var name = popup.querySelector("[name=name]");
+      var email = popup.querySelector("[name=email]");
+      var storage = localStorage.getItem("name");
+
+      link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+
+          if (storage) {
+      name.value = storage;
+           email.focus();
+        } else {
+      name.focus();
+      }
+  });
+
+    close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
+  });
+
+    form.addEventListener("submit", function (evt) {
+    if (!name.value || !email.value) {
+    evt.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
+    /*console.log("Нужно ввести имя и электронную почти");*/
+  } else {
+      localStorage.setItem("name", name.value);
+    }
+  });
+
+       window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
+</script>
   </body>
 </html>
