@@ -1,4 +1,4 @@
-body  {
+body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -80,6 +80,10 @@ img {
 .gllacy-logo {
   align-self: flex-start;
   margin-right: 8px;
+
+}
+
+.gllacy-logo img {
   width: 154px;
   height: 64px;
 }
@@ -126,8 +130,8 @@ img {
 
 
 .button-promo {
- padding-left: 24px;
- padding-right: 25px;
+  padding-left: 24px;
+  padding-right: 25px;
 }
 
 
@@ -165,7 +169,7 @@ img {
 .user-search-box a,
 .entrance,
 .basket a {
- background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.2);
 }
 
 
@@ -237,12 +241,12 @@ h1,
 
 .catalog-link,
 .delivery-link,
-.companyinfo-link  {
+.companyinfo-link {
   position: relative;
 }
 
 
-.submenu  {
+.submenu {
   position: absolute;
   display: none;
   top: 70%;
@@ -290,7 +294,7 @@ h1,
 
 
 .site-navigation > li:hover .submenu {
-    display: block;
+  display: block;
 }
 
 
@@ -308,7 +312,7 @@ h1,
 }
 
 
-.submenu .active a  {
+.submenu .active a {
   background-color: #d07058;
   border-radius: 0px;
 }
@@ -392,8 +396,8 @@ a.entrance {
 
 
 .order-button {
- padding-left: 15px;
- padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 
@@ -430,7 +434,7 @@ a.entrance {
 }
 
 
-.login:hover  .user-box  {
+.login:hover  .user-box {
   display: block;
 }
 
@@ -486,7 +490,7 @@ a.entrance .icon {
 }
 
 
-.user-search input[type="search"]  {
+.user-search input[type="search"] {
   font: inherit;
   font-size: 14px;
   line-height: 24px;
@@ -496,10 +500,7 @@ a.entrance .icon {
   width: 311px;
   padding: 10px 10px 12px 13px;
   border-radius: 5px;
-  border: none;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #d3d3d2;
+  border: 1px solid #d3d3d2 ;
   height: 44px;
 }
 
@@ -553,6 +554,10 @@ a.entrance .icon {
   border-color: #d3d3d2;
   margin: 0 0 10px 0;
   font-weight: 700;
+  -webkit-appearance: none;
+   box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-appearance: none;
 }
 
 
@@ -560,7 +565,7 @@ a.entrance .icon {
 .user input[type="password"]:hover,
 .user-search input[type="search"]:hover {
   border: 1px solid #c7c6c5;
-  box-shadow:inset 0 0 0 1px #c7c6c5;
+  box-shadow: inset 0 0 0 1px #c7c6c5;
 }
 
 
@@ -568,7 +573,7 @@ a.entrance .icon {
 .user input[type="password"]:focus,
 .user-search input[type="search"]:focus {
   border: 1px solid #8fbdec;
-  box-shadow:inset 0 0 0 1px #8fbdec;
+  box-shadow: inset 0 0 0 1px #8fbdec;
   outline: none;
 }
 
@@ -606,7 +611,7 @@ a.entrance .icon {
 }
 
 
-.user-search-box:hover .search-popup  {
+.user-search-box:hover .search-popup {
   display: block;
 }
 
@@ -632,7 +637,7 @@ a.entrance .icon {
 
 .search-popup,
 .user-box,
-.basket-popup  {
+.basket-popup {
   background-color: #f8f7f4;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.40);
 }
@@ -649,7 +654,7 @@ a.entrance .icon {
 
 
 .basket a,
-.breadcrumbs  {
+.breadcrumbs {
   font-size: 14px;
   line-height: 16px;
 }
@@ -662,7 +667,7 @@ a.entrance .icon {
 }
 
 
-.basket-item  {
+.basket-item {
   font-size: 13px;
   line-height: 16px;
 }
@@ -678,7 +683,7 @@ a.entrance .icon {
 
 
 
-.form-wrapper  {
+.form-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -772,7 +777,7 @@ a.entrance .icon {
 }
 
 
-.basket:hover .basket-popup  {
+.basket:hover .basket-popup {
   display: block;
 }
 
@@ -781,16 +786,15 @@ a.entrance .icon {
 .basket a:focus {
   background-color: #f8f7f4;
   color: #323232;
-  /*outline: none; не убирраю аутлайн потому что тогда не видно таба в каталоге*/
 }
 
 
-.basket-item span  {
+.basket-item span {
   color:#999;
 }
 
 
-.basket-popup p  {
+.basket-popup p {
   font-size: 15px;
   line-height: 18px;
   font-weight: bold;
@@ -805,7 +809,7 @@ a.entrance .icon {
 .button-fbform,
 .feedback-button,
 .entrance-button,
-.order-button  {
+.order-button {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -819,7 +823,7 @@ a.entrance .icon {
 .feedback-button,
 .order-button,
 .button,
-.order-button  {
+.order-button {
   color: #fff;
 }
 
@@ -828,7 +832,7 @@ a.entrance .icon {
 .button-subscribe,
 .button-fbform,
 .feedback-button,
-.slider-button   {
+.slider-button {
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
@@ -840,7 +844,7 @@ a.entrance .icon {
 
 
 .button-subscribe,
-.feedback-button  {
+.feedback-button {
   border-radius: 20px/22px;
 }
 
@@ -912,8 +916,8 @@ a.entrance .icon {
 .button-fbform:active,
 .feedback-button:active {
   background-image:
-   linear-gradient( to top, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0.07) 100%),
-   linear-gradient( to top, #e74a35 0%, #f26843 100%);
+    linear-gradient( to top, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0.07) 100%),
+    linear-gradient( to top, #e74a35 0%, #f26843 100%);
   box-shadow: inset 0px 2px 2px 0px #942718;
 }
 
@@ -959,7 +963,7 @@ a.entrance .icon {
 
 
 .breadcrumbs li:first-child::after,
-.breadcrumbs li:nth-child(2)::after{
+.breadcrumbs li:nth-child(2)::after {
   content: "\00BB";
 }
 
@@ -1201,7 +1205,7 @@ a.entrance .icon {
 .button-promo {
   align-self: flex-end;
   margin: 0;
-  max-width: 270px;
+  max-width: 250px;
 }
 
 
@@ -1216,8 +1220,14 @@ a.entrance .icon {
 
 
 .button {
- padding-left: 20px;
- padding-right: 20px;
+  position:absolute;
+  bottom: 21px;
+  left: 50%;
+  min-width: 72%;
+  transform: translateX(-50%);
+  padding-left: 21px;
+  padding-right: 21px;
+
 }
 
 
@@ -1228,7 +1238,7 @@ a.entrance .icon {
   font-weight: bold;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
   margin: 0;
-  bottom: 82px;
+  top: 210px;
   left: 0;
   z-index: 6;
 }
@@ -1250,7 +1260,7 @@ a.entrance .icon {
 }
 
 
-.products-line-list  {
+.products-line-list {
   display:  flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1309,11 +1319,11 @@ a.entrance .icon {
   display: none;
   box-sizing: border-box;
   position: absolute;
-  padding: 6px 13px 20px 13px;
+  padding: 342px 13px 20px 13px;
   top: -6px;
   left: -13px;
+  bottom: -58px;
   width: 293px;
-  height: 405px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -1323,10 +1333,7 @@ a.entrance .icon {
 
 .product-item:hover .product-item-hover,
 .product-item-hit:hover .product-item-hover {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+  display: block;
 }
 
 
@@ -1456,7 +1463,7 @@ h1 {
   background-position: 173px -37px;
   background-repeat: no-repeat;
   border-radius: 14px;
-  padding:23px 250px 23px 19px;
+  padding: 23px 250px 23px 19px;
 }
 
 
@@ -1505,9 +1512,13 @@ h1 {
   width: 368px;
   padding: 11px 10px 12px 13px;
   border-radius: 5px;
-  border: 2px solid #d3d3d2;
+  border: 1px solid #d3d3d2;
   height: 44px;
   margin-right: 7px;
+  -webkit-appearance: none;
+   box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-appearance: none;
 }
 
 .subscribe-gllacy input[type="email"]::-webkit-input-placeholder {
@@ -1535,12 +1546,14 @@ h1 {
 
 
 .subscribe-gllacy input[type="email"]:hover {
-  border: 2px solid #c7c6c5;
+  border: 1px solid #c7c6c5;
+  box-shadow: inset 0 0 0 1px #c7c6c5;
 }
 
 
 .subscribe-gllacy input[type="email"]:focus {
   border: 2px solid #8fbdec;
+  box-shadow: inset 0 0 0 1px #8fbdec;
   outline: none;
 }
 
@@ -1573,21 +1586,27 @@ h1 {
 .contacts {
   position:relative;
   margin: 0 0 18px 0;
+  width: 100%;
+  height: 430px;
+  background-image: url(../img/map.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-
+/*
 .map {
   display: block;
   width: 100%;
   height: auto;
   z-index: 2;
-}
+} */
 
 
 iframe {
   position: absolute;
   width: 100%;
   height: 100%;
+  border: none;
   z-index: 2;
   top: 0px;
   left: 0px;
@@ -1615,7 +1634,7 @@ iframe {
 
 
 .head-office p:not(.head-office-box) {
- margin: 0 0 17px 0;
+  margin: 0 0 17px 0;
 }
 
 
@@ -1743,16 +1762,32 @@ iframe {
   line-height: 18px;
   font-weight: 500;
   color: #fff;
-  background-image: url(../img/select-arrow.svg);
+  background-image: url(../img/icon-down-dir.svg);
   background-repeat: no-repeat;
-  background-position: center right 2px;
-  background-size: 13px 15px; /* наобум в макете 10 на 11  не задано наведение и не перекрывает значек обычный селекта*/
+  background-position: center right 16px;
+  background-size: 10px 11px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
+
+
+.sort-select::-ms-expand {
+  display: none;
+}
+
 
 
 .sort-select:hover,
 .sort-select:focus {
   color: #323232;
+  background-image: url(../img/icon-down-dir-black.svg);
+  background-repeat: no-repeat;
+  background-position: center right 16px;
+  background-size: 10px 11px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 
@@ -1769,7 +1804,7 @@ iframe {
 
 
 .price-type {
-margin:  0 13px 0 0;
+  margin:  0 13px 0 0;
 }
 
 
@@ -1854,7 +1889,7 @@ margin:  0 13px 0 0;
 }
 
 
-input[type="radio"]:checked+.radio-mark{
+input[type="radio"]:checked+.radio-mark {
   background-image: url(../img/radio-on.svg);
   background-position: center center;
   background-size: 22px 22px;
@@ -1907,7 +1942,7 @@ input[type="radio"]:disable+.radio-mark {
 
 .filler-type div {
   background-color: rgba(255, 255, 255, 0.2);
-  padding:  8px 0 8px 14px;
+  padding: 8px 0 8px 14px;
   border-radius: 20px;
   cursor: pointer;
   display: flex;
@@ -1957,13 +1992,13 @@ input[type="checkbox"]:focus+.checkbox-mark {
 }
 
 
-input[type="checkbox"]:disable+.checkbox-mark{
+input[type="checkbox"]:disable+.checkbox-mark {
   opacity: 0.4;
 }
 
 
 .filler:hover+.checkbox-mark,
-.filler-type label:focus .checkbox-mark  {
+.filler-type label:focus .checkbox-mark {
   opacity: 1;
 }
 
@@ -2034,14 +2069,16 @@ input[type="checkbox"]:disable+.checkbox-mark{
 .feedbackform input[type="text"]:hover,
 .feedbackform input[type="email"]:hover,
 .feedbackform textarea:hover {
-  border: 2px solid #c7c6c5;
+  border: 1px solid #c7c6c5;
+  box-shadow: inset 0 0 0 1px #c7c6c5;
 }
 
 
 .feedbackform input[type="text"]:focus,
 .feedbackform input[type="email"]:focus,
 .feedbackform textarea:focus {
-  border: 2px solid #8fbdec;
+  border: 1px solid #8fbdec;
+  box-shadow: inset 0 0 0 1px #8fbdec;
   outline: none;
 }
 
@@ -2057,9 +2094,13 @@ input[type="checkbox"]:disable+.checkbox-mark{
   width: 267px;
   padding: 11px 10px 12px 13px;
   border-radius: 5px;
-  border: 2px solid #d3d3d2;
+  border: 1px solid #d3d3d2;
   height: 44px;
   margin: 0 0 20px 0;
+  -webkit-appearance: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-appearance: none;
 }
 
 
@@ -2106,9 +2147,13 @@ input[type="checkbox"]:disable+.checkbox-mark{
   height: 154px;
   padding: 9px 10px 12px 13px;
   border-radius: 5px;
-  border: 2px solid #d3d3d2;
+  border: 1px solid #d3d3d2;
   margin: 0 0 20px 0;
   resize:none;
+  -webkit-appearance: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-appearance: none;
 }
 
 
