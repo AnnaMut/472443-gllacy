@@ -1,4 +1,4 @@
-var link = document.querySelector(".button-fbform");
+      var link = document.querySelector(".button-fbform");
       var popup = document.querySelector(".feedbackform");
       var close = popup.querySelector(".feedbackform-close");
       var form = popup.querySelector("form");
