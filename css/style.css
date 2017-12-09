@@ -220,10 +220,8 @@ h1,
   color: #323232;
   border-radius: 16px;
   outline: none;
+  text-decoration: none;
 }
-
-
-
 
 
 .catalog-link:active,
@@ -236,7 +234,6 @@ h1,
   text-decoration: none;
   color: #323232;
 }
-
 
 
 .catalog-link,
@@ -323,6 +320,7 @@ h1,
   border-radius: 0px;
 }
 
+
 .submenu a:focus,
 .submenu a:active {
   background-color: #f6b5a5;
@@ -351,6 +349,7 @@ a.entrance {
   right: 55px;
   bottom: 6px;
 }
+
 
 .icon-loupe {
   width: 17px;
@@ -555,9 +554,9 @@ a.entrance .icon {
   margin: 0 0 10px 0;
   font-weight: 700;
   -webkit-appearance: none;
-   box-shadow: none;
   -webkit-box-shadow: none;
   -webkit-appearance: none;
+  box-shadow: none;
 }
 
 
@@ -672,6 +671,7 @@ a.entrance .icon {
   line-height: 16px;
 }
 
+
 .login,
 .basket,
 .basket.active,
@@ -680,7 +680,6 @@ a.entrance .icon {
   margin: 0 0 0 10px;
   position: relative;
 }
-
 
 
 .form-wrapper {
@@ -728,8 +727,6 @@ a.entrance .icon {
   border-spacing: 0;
   border-bottom: 1px solid #cacac7;
 }
-
-
 
 
 .basket-item-delete,
@@ -890,6 +887,7 @@ a.entrance .icon {
   cursor: pointer;
 }
 
+
 .entrance-button:focus,
 .order-button:focus,
 .button-promo:focus,
@@ -904,8 +902,6 @@ a.entrance .icon {
   box-shadow: 0px 1px 2px 0px #ac1000;
   outline: none;
 }
-
-
 
 
 .entrance-button:active,
@@ -950,6 +946,7 @@ a.entrance .icon {
   margin: 0 0 0 7px;
 }
 
+
 .flex-breadcrumbs {
   display: flex;
   padding: 0;
@@ -986,9 +983,6 @@ a.entrance .icon {
 }
 
 /* header and some common style */
-
-
-
 
 
 .slider {
@@ -1357,6 +1351,7 @@ a.entrance .icon {
   outline: none;
 }
 
+
 h1,
 .blog-news a {
   font-size: 24px;
@@ -1402,6 +1397,7 @@ h1 {
 .features-list li:not(.eco):not(.thermometer) {
   margin: 0 0 22px 0;
 }
+
 
 .features-item img {
   position: absolute;
@@ -1473,6 +1469,7 @@ h1 {
   margin: 0 0 40px 0;
 }
 
+
 .blog-news,
 .subscribe-form {
   width: 560px;
@@ -1516,10 +1513,11 @@ h1 {
   height: 44px;
   margin-right: 7px;
   -webkit-appearance: none;
-   box-shadow: none;
   -webkit-box-shadow: none;
   -webkit-appearance: none;
+   box-shadow: none;
 }
+
 
 .subscribe-gllacy input[type="email"]::-webkit-input-placeholder {
   font-weight: 400;
@@ -1583,6 +1581,7 @@ h1 {
   background-size: cover;
 }
 
+
 .contacts {
   position:relative;
   margin: 0 0 18px 0;
@@ -1591,15 +1590,8 @@ h1 {
   background-image: url(../img/map.jpg);
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
-
-/*
-.map {
-  display: block;
-  width: 100%;
-  height: auto;
-  z-index: 2;
-} */
 
 
 iframe {
@@ -1698,6 +1690,7 @@ iframe {
   display: flex;
 }
 
+
 .type-button {
   display: inline-block;
   vertical-align: middle;
@@ -1716,6 +1709,7 @@ iframe {
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
+
 
 .type-button:hover,
 .type-button:focus {
@@ -1740,9 +1734,11 @@ iframe {
   padding: 0;
 }
 
+
 .sort-type {
   margin:0 14px 0 0;
 }
+
 
 .sort-box {
   font-size: 14px;
@@ -1775,7 +1771,6 @@ iframe {
 .sort-select::-ms-expand {
   display: none;
 }
-
 
 
 .sort-select:hover,
@@ -2098,9 +2093,9 @@ input[type="checkbox"]:disable+.checkbox-mark {
   height: 44px;
   margin: 0 0 20px 0;
   -webkit-appearance: none;
-  box-shadow: none;
   -webkit-box-shadow: none;
   -webkit-appearance: none;
+  box-shadow: none;
 }
 
 
@@ -2151,9 +2146,9 @@ input[type="checkbox"]:disable+.checkbox-mark {
   margin: 0 0 20px 0;
   resize:none;
   -webkit-appearance: none;
-  box-shadow: none;
   -webkit-box-shadow: none;
   -webkit-appearance: none;
+  box-shadow: none;
 }
 
 
@@ -2352,9 +2347,11 @@ input[type="checkbox"]:disable+.checkbox-mark {
   line-height: 18px;
 }
 
+
 .info-link li:not(:last-of-type) {
   width: 42%;
 }
+
 
 .info-link li:first-child {
   font-weight: bold;

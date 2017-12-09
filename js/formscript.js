@@ -28,7 +28,7 @@ var link = document.querySelector(".button-fbform");
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
-    /*console.log("Нужно ввести имя и электронную почти");*/
+    console.log("Нужно ввести имя и электронную почти");
   } else {
       localStorage.setItem("name", name.value);
     }
